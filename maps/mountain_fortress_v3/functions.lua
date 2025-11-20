@@ -3278,7 +3278,7 @@ function Public.on_research_finished(event)
         return
     end
     local flamethrower_damage = Public.get('flamethrower_damage')
-    flamethrower_damage[force_name] = -0.85
+    flamethrower_damage[force_name] = 20
     if research.name == 'military' then
         game.forces[force_name].set_turret_attack_modifier('flamethrower-turret', flamethrower_damage[force_name])
         game.forces[force_name].set_ammo_damage_modifier('flamethrower', flamethrower_damage[force_name])

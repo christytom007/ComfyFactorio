@@ -39,7 +39,7 @@ Global.register(
 
 local Public = {}
 
-Public.points_per_level = 5
+Public.points_per_level = 50
 
 Public.experience_levels = { 0 }
 for a = 1, 4999, 1 do -- max level

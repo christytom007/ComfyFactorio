@@ -547,7 +547,7 @@ function Public.reset_main_table()
         explosive_bullets_purchased = false,
         xp_points_upgrade = 0,
         aura_upgrades = 0,
-        aura_upgrades_max = 12, -- = (aura_limit - locomotive_aura_radius) / 5
+        aura_upgrades_max = 15, -- = (aura_limit - locomotive_aura_radius) / 5
         locomotive_aura_radius = 40,
         train_upgrade_contribution = 0,
         xp_points = 0,
@@ -597,7 +597,7 @@ function Public.reset_main_table()
     }
     this.market_limits =
     {
-        chests_outside_limit = 8,
+        chests_outside_limit = 15,
         aura_limit = 100, -- limited to save UPS
         pickaxe_tier_limit = 59,
         health_upgrades_limit = 100,
@@ -637,7 +637,7 @@ function Public.reset_main_table()
         compare_next = 200,
         distance_from = 2
     }
-    this.spidertron_unlocked_at_zone = 11
+    this.spidertron_unlocked_at_zone = 5
     this.spidertron_unlocked_enabled = false
     -- this.void_or_tile = 'lab-dark-2'
     if Public.is_modded_pt2 then
@@ -761,7 +761,7 @@ function Public.reset_main_table()
     end
 
 
-    this.enforce_wave_200_before_collapse = true
+    this.enforce_wave_200_before_collapse = false
 
     for k, _ in pairs(this.players) do
         this.players[k] = {}
