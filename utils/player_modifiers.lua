@@ -11,7 +11,7 @@ local this =
 {
     modifiers = {},
     disabled_modifier = {},
-    rpg_inventory_slot_limit = 240 -- huge inventory lags the server, this fixes it
+    rpg_inventory_slot_limit = 10000 -- huge inventory lags the server, this fixes it
 }
 
 Global.register(
